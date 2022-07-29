@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body{
+  margin:0;
+  padding:0;
+}
+
+#root{
+  background-color: hsl(180, 31%, 95%);
+}
+
+.navbar {
+  height: 15vh;
+  width: 98vw;
+  position: relative;
+  top: 0;
+  background-image: url(../public/images/bg-header-desktop.svg);
+  background-size: cover;
+}
+
+main {
+  width: 80vw;
+  margin: 3rem auto;
+  display: grid;
+  
+}
+
+.header{
+  margin-bottom:20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.job-container {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 10px 15px -7px rgba(93, 164, 164, 0.5);
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding:20px;
+  transition: all 1s linear;
+}
+
+.job-container:hover{
+  border-left: 6px solid rgb(192, 226, 232);
+  
+}
+
+.job-img {
+  width: 90px;
+  height: auto;
+}
+
+.info {
+  width: auto;
+  margin-left:25px;
+  padding: 5px;
+}
+
+.jobs-company {
+  display: block;
+  color:hsl(180, 29%, 50%);
+}
+
+.job-details {
+  display: flex;
+  
+}
+.job-detail {
+  margin: 5px 15px;
+  color:hsl(180, 8%, 52%);
+}
+
+.job-position{
+  color:hsl(180, 8%, 52%);
+}
+
+li {
+  list-style-type: none;
+}
+
+.filters {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.filter-btn {
+  color: hsl(180, 14%, 44%);
+  font-weight: 700;
+  padding: 6px 20px;
+  margin:auto 16px;
+  cursor:pointer;
+  border:transparent;
+  border-radius: 2px;
+  background-color: rgb(192, 226, 232);
+}
+
+.filter-btn:hover{
+  background-color: hsl(180, 1%, 19%);
+}
+
+.search-bar{
+  width:80vw;
+  height:auto;
+  box-shadow: 0px 10px 15px -7px rgba(93, 164, 164, 0.5);
+  border-radius: 10px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.search-container{
+  display: flex;
+  margin-top:2rem;
+  margin-bottom:2rem;
+  
+}
+
+.tag-btn{
+  margin:auto 8px;
+  padding:3px 10px;
+  border-radius:5px;
+  cursor:pointer;
+  border:transparent;
+  color: hsl(180, 14%, 44%);
+  background-color: rgb(192, 226, 232);
+}
+
+.clear-btn{
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  margin:auto 10px;
+  font-size:1rem;
+}
+
+@media (max-width:600px){
+  main{
+    width: 100vw;
+  }
+  .filter-btn{
+    margin-top:8px;
+
+  }
+  .filters{
+    align-items: center;
+  }
+}
